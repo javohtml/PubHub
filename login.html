@@ -26,6 +26,9 @@
                                 <img src="images/avatar/profile-pic.png" class="img-responsive" style="margin-top: -55px;" />
                             </div>
                         </div>
+                        <div class="alert alert-info" id="info">
+                        
+                        </div>
                         <div class="form-group">
                             <label for="inputName" class="col-md-3 control-label">
                                 Usuario:</label>
@@ -114,7 +117,7 @@
                     window.location.href = 'index.html';
                 }else{
                     console.log('nada');
-                    alert(mensaje + ', error de usuario o contraseña');
+                    $( "#info" ).html( "<p><b>"+mensaje +"</b><br>Error de usuario o contraseña</b></p>" );
                 }
             }
         });
