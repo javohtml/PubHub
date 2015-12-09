@@ -167,7 +167,6 @@
     var id              = window.localStorage.getItem("id");
     var nomEncargado    = window.localStorage.getItem("nomEncargado");
     var apeEncargado    = window.localStorage.getItem("apeEncargado");
-    
     var fono            = window.localStorage.getItem("fono");
     var direccion       = window.localStorage.getItem("direccion");
     var comuna          = window.localStorage.getItem("comuna");
@@ -181,7 +180,7 @@
     <script type="text/javascript">
     $("#logout").click(function(){
         window.localStorage.clear();
-        window.location.href = 'login.html';
+        window.location.replace('login.html');
     });
     </script>
 </body>

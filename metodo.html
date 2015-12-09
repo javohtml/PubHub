@@ -42,11 +42,7 @@
             <nav id="topbar" role="navigation" style="margin-bottom: 0; " data-step="3" class="navbar navbar-default navbar-static-top">
                 <div class="topbar-main" style="background:white;"><a id="menu-toggle" href="#" class="hidden-xs"><i class="fa fa-bars"></i></a>
                     <ul class="nav navbar navbar-top-links navbar-right mbn" style="text-align:right;">
-                        <li class="dropdown topbar-user"><a data-hover="dropdown" href="#" class="dropdown-toggle" style="color: #0073FF;"><img src="images/avatar/profile-pic.png" alt="" class="img-responsive" style="width:35%;"/>&nbsp;<span class="hidden-xs">Robert John</span>&nbsp;<span class="caret"></span></a>
-                            <ul class="dropdown-menu dropdown-user pull-right">
-                                <li><a href="#"><i class="fa fa-user"></i>My Profile</a></li>
-                                <li><a href="#" id="logout"><i class="fa fa-key"></i>Log Out</a></li>
-                            </ul>
+                        <li class="dropdown topbar-user"><a data-hover="dropdown" href="#" class="dropdown-toggle" style="color: #0073FF;"><img src="images/avatar/profile-pic.png" alt="" class="img-responsive" style="width:35%;"/>
                         </li>
                     </ul>
                 </div>
@@ -97,13 +93,6 @@
                                         <p class="description">
                                             Presione aquí para Cobrar
                                         </p>    
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-6 col-md-3">
-                                <div class="panel income db mbm">
-                                    <div class="panel-body">
-                                        <button type="button" class="btn btn-outline btn-primary btn-lg btn-block" id="volver">Cancelar</button>
                                     </div>
                                 </div>
                             </div>
@@ -169,17 +158,6 @@
     var correo          = window.localStorage.getItem("correo");
     var usuario         = window.localStorage.getItem("usuario");
     var giro            = window.localStorage.getItem("giro");
-    </script>
-    <script type="text/javascript">
-    $("#logout").click(function(){
-        window.localStorage.clear();
-        window.location.href = 'login.html';
-    });
-    </script>
-    <script type="text/javascript">
-    $("#volver").click(function(){
-        window.history.back();
-    });
     </script>
 </body>
 </html>
