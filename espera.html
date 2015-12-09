@@ -140,12 +140,12 @@
                     var estado  = data.Valor;
                     if(mensaje=="Task Completed"){
                         switch(estado){
-                            case 1:
+                            case '1':
                                 window.location.href = 'success.html';
                                 window.localStorage.removeItem('codigoTran');
                                 break;
 
-                            case 2:
+                            case '2':
                                 window.location.href = 'fail.html';
                                 window.localStorage.removeItem('codigoTran');
                                 break;
