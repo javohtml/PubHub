@@ -141,12 +141,12 @@
                     if(mensaje=="Task Completed"){
                         switch(estado){
                             case '1':
-                                window.location.href = 'success.html';
+                                window.location.replace('success.html');
                                 window.localStorage.removeItem('codigoTran');
                                 break;
 
                             case '2':
-                                window.location.href = 'fail.html';
+                                window.location.replace('fail.html');
                                 window.localStorage.removeItem('codigoTran');
                                 break;
 

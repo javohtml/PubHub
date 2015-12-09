@@ -114,7 +114,7 @@
                     window.localStorage.setItem("usuario", usuario);
                     window.localStorage.setItem("giro", giro);
                     window.localStorage.setItem("sesion", 'Activada');
-                    window.location.href = 'index.html';
+                    window.location.replace('index.html');
                 }else{
                     console.log('nada');
                     $( "#info" ).html( "<p><b>"+mensaje +"</b><br>Error de usuario o contraseña</b></p>" );

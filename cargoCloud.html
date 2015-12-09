@@ -159,7 +159,7 @@
                 var codigo  = data.Valor;
                 if(mensaje=="Esperando Cliente"){
                     window.localStorage.setItem("codigoTran", codigo);
-                    window.location.href = 'espera.html';
+                    window.location.replace('espera.html');
                 }else{
                     alert(mensaje);
                 }
